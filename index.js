@@ -65,7 +65,7 @@ app.put('/tasks/:id',async(req,res)=>{
 
   const task = req.body
 
-    console.log(Id,'hello',task)
+    // console.log(Id,'hello',task)
 
     const filter = { _id: new ObjectId(Id)}; 
 
@@ -84,6 +84,25 @@ app.put('/tasks/:id',async(req,res)=>{
  
   
 })
+
+
+
+app.put('/tasks/category/:id', async (req, res) => {
+  const Id = req.params.id;
+  const { category } = req.body; 
+  // console.log(category,Id)
+  const filter = { _id: new ObjectId(Id) };
+  const updateDoc = {
+    $set: {
+      category: category, 
+    },
+  };
+
+  const result = await taskCollection.updateOne(filter, updateDoc);
+  res.send(result);
+});
+
+
 
 
 
