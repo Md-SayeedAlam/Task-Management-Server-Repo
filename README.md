@@ -76,7 +76,7 @@ This project is licensed under [MIT License](LICENSE).
 
 ## GITHUB REPOSITORY LINK (SERVER SIDE) : https://github.com/Md-SayeedAlam/Task-Management-Server-Repo
 
-## LIVE LINK : FIREBASE : https://restaurant-management-9fcba.web.app/
+## LIVE LINK : FIREBASE : https://task-management-applicat-6d68e.web.app/
 
 ## LIVE lINK: NETLIFY:  https://sayeed-task-management.netlify.app/
 
